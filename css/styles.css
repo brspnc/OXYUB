@@ -1,0 +1,19 @@
+h1, h2 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, orange, black);
+    color: white;
+}
+
+.navbar {
+    background-color: black;
+}
+
+footer {
+    background-image: linear-gradient(orange, white);
+    padding: 20px 0;
+}
