@@ -17,3 +17,8 @@ footer {
     background-image: linear-gradient(orange, white);
     padding: 20px 0;
 }
+
+.messages {
+    border: solid 5px orange;
+    padding: 100px;
+}
