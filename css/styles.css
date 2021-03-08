@@ -18,7 +18,10 @@ footer {
     padding: 20px 0;
 }
 
-.messages {
-    border: solid 5px orange;
-    padding: 100px;
+.panel {
+    border-radius: 25px;
+    border: solid 2px orange;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
 }
