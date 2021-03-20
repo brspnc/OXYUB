@@ -9,7 +9,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass -o css/ css/",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
-    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "copyfonts": "copyfiles -f node_modules/@fortawesome/fontawesome-free/webfonts/* dist/fonts",
+    "copycalendar": "copyfiles -f node_modules/fullcalendar/* dist/calendar",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin messages.html -d dist --htmlmin -o dist/messages.html && usemin calendar.html -d dist --htmlmin -o dist/calendar.html && usemin directory.html -d dist --htmlmin -o dist/directory.html && usemin resources.html -d dist --htmlmin -o dist/resoures.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run copycalendar && npm run usemin"
   },
   "author": "Brisa Ponce",
   "license": "ISC",
@@ -19,11 +25,14 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "bootstrap": "^4.5.2",
+    "copyfiles": "^2.2.0",
     "fullcalendar": "^5.5.1",
+    "imagemin-cli": "^5.1.0",
     "jquery": "^3.5.1",
     "node-sass": "^5.0.0",
     "onchange": "^7.0.0",
     "parallelshell": "3.0.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "usemin-cli": "^0.6.0"
   }
 }
