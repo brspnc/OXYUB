@@ -1,0 +1,41 @@
+$color-primary: rgb(250, 165, 8);
+$color-secondary: black;
+
+h1, h2 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 20px;
+    background-image: linear-gradient(to right, $color-primary, $color-secondary);
+    color: white;
+}
+
+.navbar {
+    background-color: $color-primary;
+}
+
+footer {
+    background-image: linear-gradient($color-primary, white);
+    padding: 20px 0;
+}
+
+.panel {
+    border-radius: 25px;
+    border: solid 2px $color-primary;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+.modal-header {
+    margin: 0;
+    padding: 20px;
+    background-image: linear-gradient(to left, $color-primary, $color-secondary);
+    color: white;
+}
+
+.card {
+    border: solid 2px $color-primary;
+}
