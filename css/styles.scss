@@ -13,7 +13,7 @@ h1, h2 {
 }
 
 .navbar {
-    background-color: $color-primary;
+    background-color: $color-secondary;
 }
 
 footer {
@@ -37,5 +37,6 @@ footer {
 }
 
 .card {
-    border: solid 2px $color-primary;
+    border: solid 4px $color-primary;
 }
+

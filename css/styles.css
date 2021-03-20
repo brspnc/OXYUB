@@ -4,19 +4,19 @@ h1, h2 {
 .jumbotron {
   margin: 0;
   padding: 20px;
-  background-image: linear-gradient(to right, orange, black);
+  background-image: linear-gradient(to right, #faa508, black);
   color: white; }
 
 .navbar {
   background-color: black; }
 
 footer {
-  background-image: linear-gradient(orange, white);
+  background-image: linear-gradient(#faa508, white);
   padding: 20px 0; }
 
 .panel {
   border-radius: 25px;
-  border: solid 2px orange;
+  border: solid 2px #faa508;
   padding: 20px;
   width: 200px;
   height: 150px; }
@@ -24,8 +24,8 @@ footer {
 .modal-header {
   margin: 0;
   padding: 20px;
-  background-image: linear-gradient(to left, orange, black);
+  background-image: linear-gradient(to left, #faa508, black);
   color: white; }
 
 .card {
-  border: solid 2px orange; }
+  border: solid 4px #faa508; }

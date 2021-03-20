@@ -26,6 +26,7 @@
                 initialView: 'dayGridMonth',
                 selectable: true
                  });
+                
                 calendar.render();
              });
         </script>
@@ -110,14 +111,16 @@
 
         <div class="container">
             <div class="row row-content">
-                <div class="col-4 panel panel-default">
-                    <div class="panel-heading text-center"><a href="messages.html">Messages</a></div>
+                <div class="col-4 card">
+                    <div class="card-header text-center bg-transparent"><a href="messages.html">Messages</a></div>
                     <div class="panel-body">Latest Messages</div>
                 </div>
-                <div class="col-3 panel panel-default offset-4">
-                    <div class="panel-heading text-center"><a href="calendar.html">Calendar</a></div>
-                        <div id="calendar"></div>
-                </div>
+                <div class="col-4 card text-center offset-sm-4">
+                    <div class="card-header bg-transparent"><a href="calendar.html">Calendar</a></div>
+                        <div class="card-body" id="calendar">
+                            <script>calendar.updateSize();</script>
+                        </div>
+                    </div>
             </div>
         </div>
 
