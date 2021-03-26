@@ -13,7 +13,7 @@
     "copyfonts": "copyfiles -f node_modules/@fortawesome/fontawesome-free/webfonts/* dist/fonts",
     "copycalendar": "copyfiles -f node_modules/fullcalendar/* dist/calendar",
     "imagemin": "imagemin img/* -o dist/img",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin messages.html -d dist --htmlmin -o dist/messages.html && usemin calendar.html -d dist --htmlmin -o dist/calendar.html && usemin directory.html -d dist --htmlmin -o dist/directory.html && usemin resources.html -d dist --htmlmin -o dist/resoures.html",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin messages.html -d dist --htmlmin -o dist/messages.html && usemin calendar.html -d dist --htmlmin -o dist/calendar.html && usemin directory.html -d dist --htmlmin -o dist/directory.html && usemin resources.html -d dist --htmlmin -o dist/resources.html",
     "clean": "rimraf dist",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run copycalendar && npm run usemin"
   },
